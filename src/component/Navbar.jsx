@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Menu, Moon, MoveUpLeft, MoveUpRight, Music, SquareArrowOutUpRight, Sun } from 'lucide-react';
 import { setDigitalClockTime } from '../features/setDigitalClockTime';
-import ToggleDarkMode from '../features/toggleDarkMode';
+// import ToggleDarkMode from '../features/toggleDarkMode';
+import ToggleDarkMode from '../features/ToggleDarkMode';
 import { NavLink } from 'react-router-dom';
 
 function Navbar() {
