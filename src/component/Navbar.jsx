@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Menu, Moon, MoveUpLeft, MoveUpRight, Music, SquareArrowOutUpRight, Sun } from 'lucide-react';
+import { Menu, Moon, MoveUpLeft, MoveUpRight, SquareArrowOutUpRight, Sun } from 'lucide-react';
 import { setDigitalClockTime } from '../features/setDigitalClockTime';
 // import ToggleDarkMode from '../features/toggleDarkMode';
 import ToggleDarkMode from '../features/ToggleDarkMode';
 import { NavLink } from 'react-router-dom';
+import MusicPlayer from '../features/MusicPlayer';
 
 function Navbar() {
 
@@ -27,7 +28,7 @@ function Navbar() {
                         </NavLink>
                     </li>
                     <li className='cursor-pointer font-medium'>
-                        <NavLink to={"/"} className={({isActive})=> isActive ? " opacity-100":"opacity-50" }>Home</NavLink>
+                        <NavLink to={"/"} className={({ isActive }) => isActive ? " opacity-100" : "opacity-50"}>Home</NavLink>
                     </li>
                     <li className='opacity-50 hover:opacity-100 cursor-pointer'>
                         <div className='flex gap-2 items-center group'>
@@ -57,7 +58,7 @@ function Navbar() {
                 </ul>
                 {/* Mobile responsive navbar */}
                 <ul className='block md:hidden cursor-pointer px-5 hover:bg-[#F5F4F4] '
-                    >
+                >
                     <Menu />
                 </ul>
 
@@ -66,7 +67,7 @@ function Navbar() {
 
                         <input
                             type="text"
-                            placeholder= "Search sections"
+                            placeholder="Search sections"
                             className="hidden md:block md:w-30 lg:w-60 h-9 px-4 rounded-xl border border-gray-300
                             bg-white text-gray-800 placeholder:text-gray-400
                             outline-none hover:border-gray-400
@@ -78,16 +79,19 @@ function Navbar() {
                     <li className='dark:text-white dark:bg-[#1b1a1a] text-sm bg-[#F5F4F4] px-4 py-1 rounded-2xl'>{time}</li>
 
                     <li className='flex gap-2 justify-center items-center'>
-                        <div className='dark:hover:dark:bg-[#1b1a1a] px-3 py-3 rounded-full hover:bg-[#F5F4F4] cursor-pointer'>
-                            <Music size={17} className='hover:scale-110 transition-transform duration-300' />
-                        </div>
 
+                        {/* Music Button */}
+                        <MusicPlayer />
+
+                        {/* DarkMode functionality */}
                         <ToggleDarkMode></ToggleDarkMode>
 
-                        <div className='dark:hover:dark:bg-[#1b1a1a] px-2 py-2 rounded-full hover:bg-[#F5F4F4]  cursor-pointer'>
-                            <img src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
-                                className='dark:bg-white rounded-full p-[1px] w-6 h-6 hover:scale-105 transition-transform duration-300' />
-                        </div>
+                        {/* GitHub Link */}
+                        <a href="https://github.com/surajkadam-2703" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                            className="cursor-pointer rounded-full px-2 py-2 hover:bg-[#F5F4F4] dark:hover:bg-[#1b1a1a]">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"
+                                className="h-6 w-6 rounded-full p-[1px] transition-transform duration-300 hover:scale-105 dark:bg-white"/>
+                        </a>
                     </li>
 
                 </ul>
