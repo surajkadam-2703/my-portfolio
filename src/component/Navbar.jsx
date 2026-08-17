@@ -5,6 +5,7 @@ import { setDigitalClockTime } from '../features/setDigitalClockTime';
 import ToggleDarkMode from '../features/ToggleDarkMode';
 import { NavLink } from 'react-router-dom';
 import MusicPlayer from '../features/MusicPlayer';
+import Toggle_Menubar from '../features/Toggle_Menubar';
 
 function Navbar() {
 
@@ -57,10 +58,11 @@ function Navbar() {
                     </li>
                 </ul>
                 {/* Mobile responsive navbar */}
-                <ul className='block md:hidden cursor-pointer px-5 hover:bg-[#F5F4F4] '
+                {/* <div className='block md:hidden px-3 py-3 hover:bg-[#F5F4F4] cursor-pointer dark:hover:bg-[#1b1a1a] '
                 >
                     <Menu />
-                </ul>
+                </div> */}
+                <Toggle_Menubar />
 
                 <ul className=' p-1 flex gap-4 items-center'>
                     <li>
