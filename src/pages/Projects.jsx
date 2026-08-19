@@ -19,63 +19,59 @@ function Projects() {
                     <h1 className="text-lg md:text-xl lg:text-3xl font-bold tracking-tight text-gray-500 dark:text-gray-400">A lot of ideas, but some are still under construction!</h1>
                 </div>
 
-                <div className="grid gap-5 grid-cols-1 sm:gap-6 sm:grid-cols-2 xl:grid-cols-3">
-                    {projectsArr.map((project, index) => {
-                        return (
-                            <div
-                                key={index}
-                                className="group overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900"
-                            >
-                                {/* Project Image */}
-                                <div className="h-48 w-full overflow-hidden sm:h-52 md:h-56">
-                                    <img
-                                        src={project.image}
-                                        alt={project.title}
-                                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                    />
-                                </div>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                    {projectsArr.map((project, index) => (
+                        <div
+                            key={index}
+                            className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900"
+                        >
+                            {/* Project Image */}
+                            <div className="aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                />
+                            </div>
 
-                                {/* Project Content */}
-                                <div className="p-4">
+                            {/* Project Content */}
+                            <div className="flex flex-1 flex-col p-4 sm:p-5">
 
-                                    {/* Project Title */}
-                                    <h2 className="text-lg font-bold tracking-tight text-gray-900 sm:text-xl dark:text-white">
-                                        {project.title}
-                                    </h2>
+                                {/* Title */}
+                                <h2 className="text-lg font-bold tracking-tight text-gray-900 sm:text-xl dark:text-white">
+                                    {project.title}
+                                </h2>
 
-                                    {/* Project Overview */}
-                                    <p className="mt-2 text-xs leading-5 text-gray-500 sm:mt-3 sm:text-sm sm:leading-6 md:text-base dark:text-gray-400">
-                                        {project.overview}
-                                    </p>
+                                {/* Overview */}
+                                <p className="mt-2 text-sm leading-6 text-gray-500 sm:mt-3 dark:text-gray-400">
+                                    {project.overview}
+                                </p>
 
-                                    {/* Learn More */}
-                                    <div className="mt-4 flex flex-wrap items-center gap-3 sm:mt-5 md:mt-6">
-                                        {/* Live Demo */}
-                                        <a
-                                            href={project.liveLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2 text-xs font-medium text-white transition-all duration-300 hover:bg-red-700 sm:px-5 sm:py-2.5 sm:text-sm"
-                                        >
-                                            <RiLiveFill className="text-sm sm:text-base" />
-                                            <span>Live Demo</span>
-                                        </a>
+                                {/* Buttons */}
+                                <div className="mt-auto flex flex-wrap gap-3 pt-5">
+                                    <a
+                                        href={project.liveLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-red-700"
+                                    >
+                                        <RiLiveFill className="text-base" />
+                                        <span>Live Demo</span>
+                                    </a>
 
-                                        {/* GitHub */}
-                                        <a
-                                            href={project.githubLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-gray-100 px-4 py-2 text-xs font-medium text-gray-800 transition-all duration-300 hover:bg-gray-200 sm:px-5 sm:py-2.5 sm:text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
-                                        >
-                                            <FaGithub className="text-sm sm:text-base" />
-                                            <span>GitHub</span>
-                                        </a>
-                                    </div>
+                                    <a
+                                        href={project.githubLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-gray-100 px-4 py-2.5 text-sm font-medium text-gray-800 transition-all duration-300 hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
+                                    >
+                                        <FaGithub className="text-base" />
+                                        <span>GitHub</span>
+                                    </a>
                                 </div>
                             </div>
-                        );
-                    })}
+                        </div>
+                    ))}
                 </div>
             </section>
 
