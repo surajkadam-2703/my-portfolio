@@ -64,9 +64,11 @@ function Navbar() {
                 </div> */}
                 <Toggle_Menubar />
 
+                
                 <ul className=' p-1 flex gap-4 items-center'>
-                    <li>
-
+                    
+                    {/* SEARCH bar functionality not added */}
+                    {/* <li>
                         <input
                             type="text"
                             placeholder="Search sections"
@@ -77,11 +79,13 @@ function Navbar() {
                             dark:bg-zinc-900 dark:border-zinc-700
                             dark:text-white dark:placeholder:text-zinc-400 dark:hover:border-zinc-500
                             dark:focus:border-white dark:focus:ring-zinc-700"/>
-                    </li>
+                    </li> */}
+
+                    {/* Time */}
                     <li className='dark:text-white dark:bg-[#1b1a1a] text-sm bg-[#F5F4F4] px-4 py-1 rounded-2xl'>{time}</li>
 
-                    <li className='flex gap-2 justify-center items-center'>
 
+                    <li className='flex gap-2 justify-center items-center'>
                         {/* Music Button */}
                         <MusicPlayer />
 
