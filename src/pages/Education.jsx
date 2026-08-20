@@ -18,7 +18,7 @@ function Education() {
                     <article className='flex flex-col gap-2 mt-2'>
                         <p className='text-justify text-[13px] md:text-[15px] xl:text-[17px]'>
                             Education has been an important part of my journey into the tech world. I pursued a Bachelor of Science in Information Technology (B.Sc. IT) at D. D. Vispute College of Science, Commerce & Management, where I built a strong foundation in computer science, programming, and software development.
-                        </p>import Education from './Education';
+                        </p>
 
 
                         <p className='text-justify text-[13px] md:text-[15px] xl:text-[17px]'>
