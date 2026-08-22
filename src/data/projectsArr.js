@@ -29,7 +29,7 @@ const projectsArr=[
         title:"CodeStudio (Code Editor) ",
         image: code_studio_img,
         overview: "It's a desktop-based code editor built with Java Swing and AWT, supporting multiple programming languages, file management, code execution, Find & Replace, Undo/Redo, themes, font customization, and multi-window editing.",
-        liveLink: "https://example.com",
+        liveLink: "",
         githubLink: "https://github.com/surajkadam-2703/CodeStudio-Code-Editor-"
     },
     

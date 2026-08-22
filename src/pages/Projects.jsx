@@ -49,15 +49,21 @@ function Projects() {
 
                                 {/* Buttons */}
                                 <div className="mt-auto flex flex-wrap gap-3 pt-5">
-                                    <a
-                                        href={project.liveLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-red-700"
-                                    >
-                                        <RiLiveFill className="text-base" />
-                                        <span>Live Demo</span>
-                                    </a>
+                                    
+                                    {/* Here we check if livelink url are exist or not! */}
+                                    {
+                                        project?.liveLink ?
+                                            <a
+                                                href={project.liveLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-red-700"
+                                            >
+                                                <RiLiveFill className="text-base" />
+                                                <span>Live Demo</span>
+                                            </a> :
+                                            null
+                                    }
 
                                     <a
                                         href={project.githubLink}
