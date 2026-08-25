@@ -76,7 +76,8 @@ function Introduction() {
                         <img
                             src={my_profile}
                             alt="Suraj Kadam"
-                            className="w-full h-full object-cover object-center"
+                            draggable="false"
+                            className="w-full h-full object-cover object-center select-none"
                         />
                     </div>
                 </div>
