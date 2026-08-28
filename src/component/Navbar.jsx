@@ -46,7 +46,7 @@ function Navbar() {
                     </li>
                     <li className='opacity-50 hover:opacity-100 cursor-pointer'>
                         <div className='flex gap-2 items-center group'>
-                            <a href='https://drive.google.com/file/d/1N66qn4PEq80JvYlhRkSGiCtE3mulSlRQ/view?usp=sharing'
+                            <a href='https://drive.google.com/file/d/17lCr3qAJzd6m8XuB1vvVOJLUURVWr7mE/view?usp=sharing'
                                 target="_blank" rel="noopener noreferrer"
                                 className='font-medium'>Resume
                             </a>
