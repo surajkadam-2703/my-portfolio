@@ -36,7 +36,7 @@ const Footer = () => {
                             <LuInstagram className="size-5 sm:size-6 hover:scale-110 transition-transform" />
                         </a>
 
-                        <a href="#" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/surajkadamofficial" target="_blank" aria-label="LinkedIn">
                             <FaLinkedinIn className="size-5 sm:size-6 hover:scale-110 transition-transform" />
                         </a>
                     </div>
