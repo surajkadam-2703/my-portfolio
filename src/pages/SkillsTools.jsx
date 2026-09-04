@@ -72,7 +72,7 @@ function SkillsTools() {
                         group-hover:shadow-md
 
                         dark:border-zinc-800
-                        dark:bg-zinc-800/80
+                        dark:bg-zinc-50
                     "
                                 >
                                     <img
