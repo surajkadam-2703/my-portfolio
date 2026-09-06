@@ -24,6 +24,10 @@ const skills_ToolsArr = [
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
     },
     {
+        name: "npm",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+    },
+    {
         name: "Java",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
     },
@@ -39,10 +43,10 @@ const skills_ToolsArr = [
         name: "GitHub",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
     },
-    {
-        name: "npm",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
-    }
+    // {
+    //     name: "Vercel",
+    //     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
+    // },
 ];
 
 export default skills_ToolsArr;
