@@ -3,15 +3,37 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 
-/* body {
-    font-family: "Geist", sans-serif;
-    font-weight: 400; 
-} */
-
 body{
   font-family: "Poppins", sans-serif;
   font-weight: 400; /* Normal */
 }
+
+
+
+/* Customizing the browser scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+::-webkit-scrollbar-thumb:hover,
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+
 
 /* :root {
   --text: #6b6375;
