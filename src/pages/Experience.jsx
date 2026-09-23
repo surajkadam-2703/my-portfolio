@@ -30,6 +30,7 @@ function Experience() {
                             <img
                                 src={certification.image}
                                 alt={certification.name}
+                                draggable={false}
                                 className="block w-full h-auto object-cover transition-transform duration-300 hover:scale-[1.02] select-none"
                             />
                         </div>
