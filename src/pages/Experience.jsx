@@ -21,11 +21,11 @@ function Experience() {
                     <h1 className="text-lg md:text-xl lg:text-3xl font-bold tracking-tight text-gray-500 dark:text-gray-400">Knowledge is powerful. A certificate makes it official! 🏆</h1>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
                     {certificationArr.map((certification, index) => (
                         <div
                             key={index}
-                            className="overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800"
+                            className="overflow-hidden rounded-lg border border-zinc-500 dark:border-zinc-800"
                         >
                             <img
                                 src={certification.image}
